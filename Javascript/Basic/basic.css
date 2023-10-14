@@ -3,13 +3,28 @@
 }
 .main_container {
   border: none;
+  display: flex;
+  justify-content: center;
 }
-
-.main_container #shower {
-  height: 2rem;
+.container {
+  border: 2px solid;
+  width: 31%;
+}
+.print_container {
+  width: 100%;
+  background-color: rgb(11, 48, 48);
+  height: 4rem;
+  color: rgb(59, 204, 204);
+  font-size: 3rem;
+  
+}
+/* 
+#shower {
+  background-color: rgb(2, 22, 15);
   font-size: 2.5rem;
   border: none;
-}
+  color: white;
+} */
 .row_container {
   width: 100%;
   display: flex;
@@ -18,8 +33,8 @@
 }
 
 .row_container .box {
-  height: 100px;
-  width: 100px;
+  height: 4rem;
+  width: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +42,8 @@
   margin-left: 3px;
   margin-bottom: 3px;
   color: aliceblue;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  padding: 0.5rem;
   border-radius: 0.5rem;
   background-color: rgb(9, 53, 53);
 }

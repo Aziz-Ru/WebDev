@@ -64,7 +64,8 @@ document.getElementById("btn_ac").onclick = function () {
   document.getElementById("shower").innerHTML = show;
 };
 
-document.getElementById("btn_dlt").onclick = function () {
-  show = show.substring(0, show.length - 1);
-  document.getElementById("shower").innerHTML = show;
+document.getElementById("btn_rslt").onclick = function () {
+  let x = eval(show);
+  show = "";
+  document.getElementById("shower").innerHTML = x;
 };
