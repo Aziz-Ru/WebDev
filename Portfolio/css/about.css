@@ -1,32 +1,32 @@
 * {
   box-sizing: border-box;
   text-decoration: none;
-}
-body{
-  background-color: rgb(83, 106, 126);
-
-}
-.Heading{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border: 2px white;
-}
-.btn{
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: rgb(255, 255, 255);
-  background-color: rgb(56, 158, 158);
-  padding: .6rem;
-  border-top-left-radius: 40%;
-  border-bottom-right-radius: 25%;
-  
-
-}
-.btn:hover{
-  background-color: aqua;
   color: black;
+}
+body {
+  background-color: rgb(255, 255, 255);
+}
+.Heading {
+  text-align: center;
+  animation: down 2s;
+}
+
+.btn {
+  margin: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: rgb(145, 145, 145);
 }
 .main_container {
   display: flex;
@@ -34,9 +34,9 @@ body{
   align-items: center;
   height: 90vh;
   border-radius: 2%;
-  box-shadow: .5rem;
+  box-shadow: 0.5rem;
   margin: 3rem;
-  
+  animation: up 2s 1;
 }
 
 .main_container .pic {
@@ -46,16 +46,15 @@ body{
   border-end-end-radius: 5%;
   height: 30rem;
   width: 20rem;
-  
 }
 .container {
   color: black;
   padding: 1rem;
 }
-.container p{
-  padding: .5rem;
+.container p {
+  padding: 0.5rem;
   font-weight: 600;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .education {
@@ -67,6 +66,16 @@ body{
   font-weight: 600;
   padding: 0.5rem;
 }
+@keyframes up {
+  from {
+    transform: translateY(200%);
+  }
+}
+@keyframes down {
+  from {
+    transform: translateY(-200%);
+  }
+}
 @media (max-width: 1040px) {
   .main_container {
     display: flex;
@@ -77,7 +86,6 @@ body{
     width: 8rem;
     border-radius: 10%;
     background-size: cover;
-    margin-left: 40%;
   }
   .box {
     flex-direction: column;
@@ -91,5 +99,3 @@ body{
     width: 100%;
   }
 }
-
-

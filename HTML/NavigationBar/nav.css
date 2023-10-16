@@ -1,48 +1,55 @@
-
-.Header{
-    border: 2px solid;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-
+.Header {
+  border: 2px solid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.Header p{
-    font-size: 22px;
-    font-weight: 600;
+.Header p {
+  font-size: 22px;
+  font-weight: 600;
 }
-.Header .navbar{
-padding: 10px;
+.Header .navbar {
+  padding: 10px;
 }
-.Header .navbar a{
-    font-size: 1.1rem;
-    color: black;
-    margin-left: 10px;
-    text-decoration: none;
+.Header .navbar a {
+  font-size: 1.1rem;
+  color: black;
+  margin-left: 10px;
+  text-decoration: none;
 }
-.Header .navbar a:hover{
-    color: hsl(0, 3%, 69%);
+.Header .navbar a:hover {
+  color: hsl(0, 3%, 69%);
 }
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
-.navr ul{
-    list-style-type: none;
-    background-color: black;
-    padding: 0px;
-    overflow: hidden;
-    
+.navr ul {
+  list-style-type: none;
+  background-color: black;
+  padding: 0px;
+  overflow: hidden;
 }
-.navr a{
-    
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
+.box_main {
+  display: flex;
 }
-.navr a:hover{
-    background-color: rgb(125, 126, 128);
+.box {
+  margin-left: 0.5rem;
+  animation: my_animation 2s 5;
 }
-.navr li{
-    float: left;
+.welcome {
+  animation: my_animation 2s 1;
+}
+.google {
+  animation: my_animation 2s 6;
+}
+@keyframes my_animation {
+  from {
+    transform: translate(-200% ,-300%);
+  }
+}
+.navr a:hover {
+  background-color: rgb(94, 110, 143);
+}
+.navr li {
+  float: left;
 }
