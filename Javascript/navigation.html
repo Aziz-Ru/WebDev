@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        height: 50px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <button id="box1">Submit1</button>
+      <p id="text"></p>
+      <button id="box2">Submit2</button>
+      <button id="box3">Submit3</button>
+      <button id="box4">Submit4</button>
+    </div>
+
+    <script>
+      const btn = document.getElementById("box1");
+      const txt = document.getElementById("text");
+      function myFunction() {
+        txt.innerHTML = "Abdul Aziz";
+      }
+      btn.addEventListener("click", function () {
+        myFunction();
+      });
+      const box=document.getElementById('box');
+      //const btns=box.childNodes;
+      const way1=btn.childNodes[0].nodeValue;
+      let way2=btn.firstChild.nodeValue;
+      console.log(way1)
+      console.log(way2);
+
+    </script>
+  </body>
+</html>

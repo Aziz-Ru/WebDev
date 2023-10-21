@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.header {
+  text-align: center;
+  background: #ededed;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #7c7474;
+}
+.navbar a {
+  text-decoration: none;
+  font-size: 22px;
+  /* display: block;
+    float: left; */
+  display: inline-block;
+  padding: 14px 16px;
+  /* background-color: aquamarine; */
+  color: #ededed;
+}
+.navbar a:hover {
+  background-color: #bbb5b5;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.toollip {
+  text-align: center;
+}
+
+.toollip_text {
+  background-color: #5e5454;
+  padding: 10px 0;
+  color: #ededed;
+  visibility: hidden;
+  border-radius: 5px;
+  z-index: 1;
+}
+.toollipbox:hover .toollip_text {
+  visibility: visible;
+  background-color: #ee2727;
+}
+.button {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}

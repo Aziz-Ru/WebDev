@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <script>
+      const demo1 = document.getElementById("demo1");
+      const demo2 = document.getElementById("demo2");
+      const demo3 = document.getElementById("demo3");
+      const demo4 = document.getElementById("demo4");
+
+      class person {
+        constructor(firstName, lastName, age, color) {
+          this.firstName = firstName;
+          this.lastName = lastName;
+          this.age = age;
+          this.color = color;
+        }
+        getName() {
+          return this.firstName + this.lastName;
+        }
+        getAge() {
+          return this.age;
+        }
+        getColor() {
+          return this.color;
+        }
+      }
+      const aziz = new person("Abdul ", "Aziz", 23, "blue");
+      const kabbo = new person("kabbo ", "krisna", 22, "red");
+      demo3.innerHTML =
+        aziz.getName() + " " + aziz.getAge() + " " + aziz.getColor();
+      demo4.innerHTML = kabbo.getName() + " " + kabbo.getAge();
+
+      const person1 = {
+        firstName: "Abdul ",
+        lastName: "Aziz",
+        age: 21,
+        nationality: "Bangladesh",
+        fullname: function () {
+          return this.firstName + this.lastName;
+        },
+      };
+      demo1.innerHTML = person1.fullname();
+      function person2(firstName, lastName, age, nationality) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.nationality = nationality;
+      }
+      const sakib = new person2("shahriar", "sakib", 24, "bd");
+      demo2.innerHTML =
+        sakib.firstName + " " + sakib.lastName + " age:" + sakib.age;
+    </script>
+  </body>
+</html>
