@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+    //   const demo = document.getElementById("demo");
+    //   function display(some) {
+    //     demo.innerHTML = some;
+    //   }
+    //   function calculate(num1, num2, callback) {
+    //     let sum = num1 * num2;
+    //     callback(sum);
+    //   }
+    //   calculate(3, 4, display);
+
+      // setTimeout(function(){
+
+      // },1000);
+
+    //   const payment = true;
+    //   const marks=99;
+    //   function enroll(callback) {
+    //     console.log("Course enrollment in progress");
+    //     setTimeout(function () {
+    //       if (payment) {
+    //         callback();
+    //       } else {
+    //         console.log("Payment Failed");
+    //       }
+    //     }, 2000);
+    //   }
+    //   function progress(callback) {
+    //     console.log("Course on Progress...");
+    //     setTimeout(function () {
+    //       if (marks >= 80) {
+    //         callback();
+    //       } else {
+    //         console.log(`you can't get enough marks`);
+    //       }
+    //     }, 8000);
+    //   }
+    //   function certificate() {
+    //     console.log("Preparing your certifcate");
+    //     setTimeout(function () {
+    //       console.log("congrats! youre successfull");
+    //     }, 1000);
+    //   }
+    //   enroll(function(){
+    //     progress(certificate);
+    //   });
+    const status=false;
+    console.log('Task 1');
+    const promise=new Promise(function(resolve,reject){
+        setTimeout(function(){
+        if(status) resolve('Task 2');
+        else reject('failed');
+    },2000)
+    });
+    promise.then(function(value){
+        console.log(value);
+    }).catch(function(err){
+        console.log(err);
+    });
+   
+    console.log('Task 3');
+
+
+
+
+    </script>
+  </body>
+</html>
