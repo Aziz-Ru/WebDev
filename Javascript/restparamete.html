@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let a=3;
+        let b=2;
+        let c=5;
+        let d=6;
+        let e=9;
+        //rest parameter
+        function sum(...numbers){
+            let tot=0;
+            for(let i of numbers){
+                tot+=i;
+            }
+            return tot;
+        }
+        console.log(sum(a,b,c,d,e));
+
+    </script>
+</body>
+</html>

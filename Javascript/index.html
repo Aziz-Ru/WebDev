@@ -25,18 +25,30 @@
         <div id="edInterval"></div>
     </div> -->
     <div>
-      <input type="button" value="Set Name cookie" onclick="('name','aziz',2)"/>
+      <input
+        type="button"
+        value="Set Name cookie"
+        onclick="('name','aziz',2)"
+      />
     </div>
     <div>
-      <input type="button" value="Set usrName cookie" onclick="setUsrName()"/>
+      <input type="button" value="Set usrName cookie" onclick="setUsrName()" />
     </div>
     <div>
-      <input type="button" value="Get Name cookie" onclick="getName('name')"/>
+      <input type="button" value="Get Name cookie" onclick="getName('name')" />
     </div>
     <div>
       <!-- <input type="button" value="Get UsrName cookie" onclick="getUsrName()"/> -->
     </div>
 
     <script src="cookies.js"></script>
+    <script>
+      let class1 = ["Halim", "Kader", "Tamim"];
+      let class2 = ["Lima", "titi", "taki"];
+      // class1.push(class2);
+      //spead operator
+      class1.push(...class2)
+      console.log(class1);
+    </script>
   </body>
 </html>
