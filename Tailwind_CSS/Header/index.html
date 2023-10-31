@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heading</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="border-box">
+    <header class="bg-blue-500 md:flex md:justify-around md:align-center">
+      <div class="flex justify-between items-center py-2 mx-2">
+        <span class="text-4xl font-[poppins] font-extrabold cursor-pointer">
+          <img src="./img/logo.jpg" alt="Logo Image " class="h-10 inline" />
+          Logo
+        </span>
+
+        <button id="menu-btn"
+          class="text-2xl cursor-pointer mx-4 md:hidden block">
+          <i class="ri-menu-line"></i>
+          <i class="ri-close-line opacity-0"></i>
+        </button>
+      </div>
+      <div>
+        <ul
+          id="navlinks"
+          class="md:flex md:item-center z-[-1] md:z-auto md:static absolute font-[poppins] bg-blue-500 w-full left-0 md:opacity-100 opacity-0 transition-all ease-in duration-500"
+        >
+          <li class="mx-4 my-4">
+            <a href="#" class="text-xl hover:text-blue-100 duration-500"
+              >Home</a
+            >
+          </li>
+          <li class="mx-4 my-4">
+            <a href="#" class="text-xl hover:text-blue-100 duration-500"
+              >Services</a
+            >
+          </li>
+          <li class="mx-4 my-4">
+            <a href="#" class="text-xl hover:text-blue-100 duration-500"
+              >About</a
+            >
+          </li>
+          <li class="mx-4 my-4">
+            <a href="#" class="text-xl hover:text-blue-100 duration-500"
+              >Contact</a
+            >
+          </li>
+          <div>
+            <button
+              class="bg-cyan-400 text-white font-[poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounder-4"
+            >
+              Get Stated
+            </button>
+          </div>
+        </ul>
+      </div>
+    </header>
+    <script>
+
+      const navlinks = document.getElementById("navlinks");
+      const openBtn = document.querySelector(".ri-menu-line");
+      const closeBtn = document.querySelector(".ri-close-line");
+      const menu_btn=document.getElementById('menu-btn');
+      
+      menu_btn.addEventListener('click',()=>{
+        openBtn.classList.toggle('opacity-0')
+        closeBtn.classList.toggle('opacity-100')
+        navlinks.classList.toggle("opacity-100");
+        
+      });
+
+    </script>
+  </body>
+</html>
