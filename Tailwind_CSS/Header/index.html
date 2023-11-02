@@ -10,60 +10,51 @@
       rel="stylesheet"
     />
   </head>
-  <body class="border-box">
-    <header class="bg-blue-500 md:flex md:justify-around md:align-center">
-      <div class="flex justify-between items-center py-2 mx-2">
+  <body class="border-box w-full">
+    <header
+      class="fixed top-0 w-full h-16 bg-blue-500 flex justify-between items-center"
+    >
+      <div class="flex justify-around items-center py-2 mx-2 ml-4">
         <span class="text-4xl font-[poppins] font-extrabold cursor-pointer">
           <img src="./img/logo.jpg" alt="" class="h-10 inline" />
           Logo
         </span>
-
-        <button
-          id="menu-btn"
-          class="text-2xl cursor-pointer mx-4 md:hidden block hover:text-blue-600 duration-500"
-        >
-          <i class="ri-menu-line block"></i>
-        </button>
       </div>
+
+      <nav class="md:text-xl text-2xl font-medium">
+        <a href="#" class="md:mx-4 mx-2 hover:text-blue-100 duration-500">
+          <span class="md:inline hidden">Home</span>
+          <i class="ri-home-line md:hidden"></i>
+        </a>
+        <a href="#" class="md:mx-4 mx-2 hover:text-blue-100 duration-500">
+          <span class="md:inline hidden">Services</span>
+          <i class="ri-shopping-cart-line md:hidden"></i>
+        </a>
+        <a href="#" class="md:mx-4 mx-2 hover:text-blue-100 duration-500">
+          <span class="md:inline hidden"> Search</span>
+          <i class="ri-search-line md:hidden"></i>
+        </a>
+        <a href="#" class="md:mx-4 mx-2 hover:text-blue-100 duration-500">
+          <span class="md:inline hidden">Contact</span>
+          <i class="ri-contacts-book-line md:hidden"></i>
+        </a>
+      </nav>
+
       <div>
-        <ul
-          id="navlinks"
-          class="md:flex md:item-center md:z-auto md:static absolute font-[poppins] bg-blue-500 right-0 md:opacity-100 opacity-0 transition-all ease-in duration-500"
+        <a
+          href=""
+          class="text-xl font-bold text-white bg-cyan-500 mr-4 px-4 py-2 rounded hover:text-blue-300 duration-500"
         >
-          <li class="mx-4 my-4">
-            <a href="#" class="text-xl hover:text-blue-100 duration-500"
-              >Home</a
-            >
-          </li>
-          <li class="mx-4 my-4">
-            <a href="#" class="text-xl hover:text-blue-100 duration-500"
-              >Services</a
-            >
-          </li>
-          <li class="mx-4 my-4">
-            <a href="#" class="text-xl hover:text-blue-100 duration-500"
-              >About</a
-            >
-          </li>
-          <li class="mx-4 my-4">
-            <a href="#" class="text-xl hover:text-blue-100 duration-500"
-              >Contact</a
-            >
-          </li>
-          <li class="mx-4 my-4">
-            <a
-              href=""
-              class="text-xl font-bold text-white bg-cyan-500 px-4 py-2 rounded hover:text-blue-300 duration-500"
-            >
-              Get Started</a
-            >
-          </li>
-        </ul>
+          <span class="lg:inline hidden"> Get Started</span>
+          <i class="ri-login-box-line lg:hidden inline"></i>
+        </a>
       </div>
     </header>
 
-    <nav class="bg-black text-white font-[poppins]">
-      <ul class="px-4 flex overflow-x-scroll">
+    <nav
+      class="fixed top-16 w-full bg-black text-white font-[poppins] hover:overflow-x-scroll"
+    >
+      <ul class="px-4 h-12 flex items-center">
         <button
           id="doc-menu"
           class="my-2 font-medium active:text-gray-500 duration-500 md:hidden"
@@ -142,379 +133,228 @@
         </li>
       </ul>
     </nav>
-
-    <aside
-      id="doucument-link"
-      class="h-[90vh] w-52 opacity-0 md:w-48 md:opacity-100 bg-gray-200 hover:overflow-y-auto duration-500"
-    >
-      <ul>
-        <li>
-          <h1 class="text-2xl font-medium font-[poppins] px-6 py-2">
+    <section id="#html-section" class="fixed top-28 bg-blue-300 w-full">
+      <aside
+        class="bg-gray-300 fixed h-full flex flex-column duration-500 ease-in"
+      >
+        <div
+          id="doucuments-link"
+          class="hover:overflow-y-scroll items-center md:block hidden"
+        >
+          <h1
+            class="text-2xl py-2 px-2 border-[1px] border-black font-bold font-[poppins]"
+          >
             Introduction
           </h1>
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
-          <h1 class="text-2xl font-medium font-[poppins] px-6 py-2">
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <h1
+            class="text-2xl py-2 px-2 border-[1px] border-black font-bold font-[poppins]"
+          >
             Introduction
           </h1>
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
-          <h1 class="text-2xl font-medium font-[poppins] px-6 py-2">
-            Introduction
-          </h1>
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
           <a
             href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
           >
-        </li>
-        <li>
-          <a
-            href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
-          >
-        </li>
-        <li>
-          <a
-            href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
-          >
-        </li>
-        <li>
-          <a
-            href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
-          >
-        </li>
-        <li>
-          <a
-            href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
-          >
-        </li>
-        <li>
-          <a
-            href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
-          >
-        </li>
-        <li>
-          <a
-            href=""
-            class="font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600"
-            >Intro</a
-          >
-        </li>
-      </ul>
-    </aside>
-
-    <main class="flex flex-row w-full">
-      <!-- <aside class="h-[90vh] w-52 hidden md:w-48 md:block bg-gray-200 hover:overflow-y-auto duration-500">
-        <ul >
-          <li><h1 class="text-2xl font-medium font-[poppins] px-6 py-2 ">Introduction</h1></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><h1 class="text-2xl font-medium font-[poppins] px-6 py-2 ">Introduction</h1></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><h1 class="text-2xl font-medium font-[poppins] px-6 py-2 ">Introduction</h1></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-          <li><a href="" class=" font-medium font-[poppins] px-6 py-2 text-xl hover:text-slate-600">Intro</a></li>
-         </ul>
-        </aside> -->
-
-      <div class="">
-        <!-- <article>
-         aspernatur officiis nulla non quasi et veritatis molestias expedita earum sapiente odio corporis quis consequatur consequuntur nostrum? Provident maxime dicta illo magnam sequi.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque ipsa modi eos facilis? Molestias voluptas blanditiis expedita distinctio minima! Dolores voluptatibus impedit, necessitatibus modi voluptas suscipit explicabo sint laudantium.
-      </article>
-      <aside class="lg:w-[25%] bg-gray-200">
-        this is aside
-      </aside> -->
-      </div>
-    </main>
+        </div>
+      </aside>
+    </section>
 
     <script>
-      const navlinks = document.getElementById("navlinks");
-      const menu_btn = document.getElementById("menu-btn");
-      const doc_menu = document.getElementById("doc-menu");
-      const doc_links = document.getElementById("doucument-link");
-      
-      menu_btn.addEventListener("click", () => {
-        navlinks.classList.toggle("opacity-100");
-      });
+      const doc_menu_btn_icon = document.getElementById("doc-menu");
+      const documents_links = document.getElementById("doucuments-link");
 
-      doc_menu.addEventListener("click", () => {
-        console.log("aziz");
-        doc_links.classList.toggle("opacity-100");
+      let isMenuBarOpen = false;
+
+      function documentation_links() {
+        documents_links.classList.toggle("hidden");
+      }
+
+      doc_menu_btn_icon.addEventListener("click", documentation_links);
+
+      document.addEventListener("click", (event) => {
+        if (
+          !event.target.closest("#doucuments-link") &&
+          !event.target.closest("#doc-menu")
+        ) {
+          documents_links.classList.add("hidden");
+        }
       });
-      // document.addEventListener("click", () => {
-      //   doc_links.classList.remove("opacity-0");
-      // });
     </script>
   </body>
 </html>

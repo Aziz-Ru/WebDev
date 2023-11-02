@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .redName {
+        color: red;
+      }
+      .fontBold {
+        font-size: 40px;
+      }
+      .bg_gnd {
+        background-color: aqua;
+        padding: 3px;
+      }
+      .display_item {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">Submit</button>
+    <p id="demo">Hello</p>
+
+    <script>
+      const btn = document.getElementById("btn");
+      const demo = document.getElementById("demo");
+      demo.classList.add("fontBold", "redName", "bg_gnd");
+      // demo.classList.remove()
+      btn.addEventListener("click", () => {
+        demo.classList.toggle("display_item");
+      });
+      console.log(demo.classList);
+    </script> 
+  </body>
+</html>

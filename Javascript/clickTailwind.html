@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <button id="btn" class="bg-cyan-400 px-4 py-2 rounded font-extrabold text-xl">Click Me</button>
+    <div id="block" class="hidden">
+        <a href="">Home</a>
+        <a href="">Contacts</a>
+        <a href="">Live</a>
+    </div>
+    
+    <script>
+        document.getElementById('btn').addEventListener('click',()=>{
+            document.getElementById('block').classList.toggle('hidden')
+        })
+    </script>
+</body>
+</html>
