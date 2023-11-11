@@ -1,0 +1,254 @@
+     
+    
+
+        <li
+          class="nav_bar_items mx-4 my-2 font-medium active:text-cyan-500 duration-500"
+        >
+          <a href="">Java</a>
+        </li>
+        <li
+          class="nav_bar_items mx-4 my-2 font-medium active:text-cyan-500 duration-500"
+        >
+          <a href="">C++</a>
+        </li>
+        <li
+          class="nav_bar_items mx-4 my-2 font-medium active:text-cyan-500 duration-500"
+        >
+          <a href="">Python</a>
+        </li>
+        <li
+          class="nav_bar_items mx-4 my-2 font-medium active:text-cyan-500 duration-500"
+        >
+          <a href="">Tailwind</a>
+        </li>
+        <li
+          class="nav_bar_items mx-4 my-2 font-medium active:text-cyan-500 duration-500"
+        >
+          <a href="">React</a>
+        </li>
+        <li
+          class="nav_bar_items mx-4 my-2 font-medium active:text-cyan-500 duration-500"
+        >
+          <a href="">Mongobd</a>
+        </li>
+        <li
+          class="nav_bar_items mx-4 my-2 font-medium active:text-cyan-500 duration-500"
+        >
+          <a href="">Go</a>
+        </li>
+        <li
+          class="nav_bar_items mx-4 my-2 font-medium active:text-cyan-500 duration-500"
+        >
+          <a href="">Kotlin</a>
+        </li>
+        <li
+          class="nav_bar_items mx-4 my-2 font-medium active:text-cyan-500 duration-500"
+        >
+          <a href="">Git</a>
+        </li>
+        <li
+          class="nav_bar_items mx-4 my-2 font-medium active:text-cyan-500 duration-500"
+        >
+          <a href="">CyberSecurity</a>
+        </li>
+
+
+         <section id="html-section" class="fixed top-28 bg-blue-300 w-full hidden content">
+      <aside class="bg-gray-300 fixed h-full flex flex-column duration-500 ease-in">
+        <div
+          id="doucuments-link"
+          class="hover:overflow-y-scroll items-center md:block hidden"
+        >
+          <h1
+            class="text-2xl py-2 px-2 border-[1px] border-black font-bold font-[poppins]"
+          >
+            Introduction
+          </h1>
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <h1
+            class="text-2xl py-2 px-2 border-[1px] border-black font-bold font-[poppins]"
+          >
+            Introduction
+          </h1>
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+          <a
+            href=""
+            class="text-xl py-1 px-4 border-[1px] border-black font-medium font-[poppins] block hover:bg-gray-200"
+            >Basics</a
+          >
+        </div>
+      </aside>
+    </section>

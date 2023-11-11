@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">click me;</button>
+    <div
+      class="box"
+      style="
+        background-color: aqua;
+        height: 100px;
+        width: 100px;
+        position: relative;
+      "
+    ></div>
+    <!-- <p id="demo"></p> -->
+
+    <script>
+      const demo = document.querySelector("#demo");
+      const box = document.querySelector(".box");
+      let x = 0,
+        y = 0;
+
+      window.addEventListener("keydown", (event) => {
+        // console.log(event.key);
+        if (event.key == "ArrowDown") {
+          y += 10;
+          box.style.top = y + "px";
+        } else if (event.key == "ArrowRight") {
+          x += 10;
+          box.style.left = x+ "px";
+        }
+        else if (event.key == "ArrowUp" && y>=0) {
+          y -= 10;
+          box.style.top= y+ "px";
+        }
+        else if (event.key == "ArrowLeft" && x>=0) {
+          x -= 10;
+          box.style.left= x+ "px";
+        }
+
+      });
+      // const btn=document.querySelector('#btn');
+      //
+
+      // btn.addEventListener('click',()=>{
+
+      //     if(box.style.display=='none'){
+      //         box.style.display='block';
+      //     }
+      //     else{
+      //         box.style.display='none';
+      //     }
+      // });
+      // const box=document.createElement('div');
+      // box.style.height='100px';
+      // box.style.width='100px';
+      // box.style.backgroundColor='purple';
+      // document.body.append(box);
+      const headerTag = document.createElement("h1");
+      headerTag.innerHTML = "How Are You?";
+      document.body.append(headerTag);
+    </script>
+  </body>
+</html>

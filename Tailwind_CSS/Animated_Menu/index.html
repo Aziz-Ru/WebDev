@@ -10,6 +10,17 @@
     <button class="bg-yellow-300 border-2 border-slate-400 px-4 py-2 text-lg font-serif font-bold text-slate-950 rounded-xl hover:bg-yellow-500">Submit</button>
     <!-- you canEdit like this but if you have multiple button and same style then  you can make a class in input.css file -->
     <button class="btn-style text-body">Click Me</button>
-    
+    <h1>This is anitmated menu bar</h1>
+
+    <div class="pointer inline-block" onclick="menu_icon_btn(this)">
+      <div class="menu_bar bar1"></div>
+      <div class="menu_bar bar2"></div>
+      <div class="menu_bar bar3"></div>
+    </div>
+    <script>
+        function menu_icon_btn(btn){
+            btn.classList.toggle('change')
+        }
+    </script>
 </body>
 </html>

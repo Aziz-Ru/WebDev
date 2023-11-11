@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 200px;
+        width: 200px;
+        background-color: lightseagreen;
+        text-align: center;
+        margin: 4px;
+      }
+      .boy{
+        background-color: brown;
+      }
+     .boy.active{
+        background-color: blueviolet;
+      }
+    </style>
+
+  </head>
+  <body>
+    <button id="btn">submit</button>
+    <div id="boy" class="boy">
+
+    </div>
+    <div id="box" onmouseover="mouseover()" onmouseout="mouseout()"></div>
+    <script>
+
+        document.body.style.backgroundColor="green";
+
+      const btn = document.getElementById("btn");
+      const box = document.getElementById("box");
+      const div=document.querySelector('#boy');
+      function clickme() {
+        btn.style.backgroundColor = "red";
+      }
+      function mouseover() {
+        box.innerHTML = "Mouse In";
+        box.style.backgroundColor='lightgreen';
+      }
+      div.addEventListener('click',()=>{
+        div.classList.toggle('active')
+      })
+      function mouseout() {
+        box.innerHTML = "this is a box";
+        box.style.border="1px solid";
+      }
+      btn.addEventListener("click", clickme);
+      
+    
+
+    </script>
+  </body>
+</html>

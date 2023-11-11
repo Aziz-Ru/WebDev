@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+           
+            background-color: aqua;
+        }
+        #mySection{
+            /* display: inline; */
+            background-color: rgb(212, 148, 148);
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv">
+        <article id="mySection">
+            my Section
+        </article>
+    </div>
+
+
+    <script>
+        // console.dir(window);
+        const wh=window.innerHeight;
+        const ww=window.innerWidth;
+        const myDiv=document.getElementById('myDiv');
+        const mySection=document.getElementById('mySection');
+        myDiv.style.height=wh+'px';
+        mySection.style.width=ww/2+'px';
+
+        // console.log(window.outerHeight);
+        // console.log(window.innerHeight);
+
+
+    </script>
+</body>
+</html>
