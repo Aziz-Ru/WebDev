@@ -1,10 +1,11 @@
+const { sample } = require("./sample");
+const { about } = require("./about");
+const {user} =require('./user');
 
-const {samplePath}=require('./sample');
-const {about}=require('./about');
-
-const routes={
-    sample:samplePath,
-    about:about,
+const routes = {
+  sample: sample,
+  about: about,
+  user:user,
 };
 
-module.exports=routes;
+module.exports = routes;
