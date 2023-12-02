@@ -8,13 +8,19 @@
 <body>
     
     <script>
-        sum(2,6,display);
+        const header=document.createElement('h1');
+
+       //A callback is a function passed as an argument to another function.
         function sum(a,b,CallBack){
             CallBack(a+b);
         }
         function display(result){
-            console.log(result);
+           header.innerHTML=result;
+           document.body.append(header);
         }
+
+        sum(2,6,display);
+        
     </script>
 </body>
 </html>

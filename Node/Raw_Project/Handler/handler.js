@@ -23,7 +23,7 @@ handler.handleReqRes = (req, res) => {
 
   //here i get query string of path
   const queryStringObj = parsedurl.query;
-
+//  console.log(queryStringObj);
   //header is meta data that is coming with request
   const headerObj = req.headers;
   // console.log(headerObj);
@@ -53,7 +53,7 @@ handler.handleReqRes = (req, res) => {
     realData += decoder.end();
     //console.log(realData);
     requestProperties.body = parseJSON(realData);
-    // console.log(requestProperties.body.toAgreement=='true');
+      // console.log(requestProperties.body.phone);
     chooseHandler(requestProperties, (statusCode, payload) => {
       statusCode = typeof statusCode === "number" ? statusCode : 500;
       payload = typeof payload === "object" ? payload : {};
