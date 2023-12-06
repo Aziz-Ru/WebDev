@@ -1,0 +1,79 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: rgb(243, 243, 243);
+  --text-color: rgb(0, 0, 0);
+  --hover-color: rgb(78, 132, 185);
+}
+body {
+  color: rgb(0, 0, 0);
+  background-color: rgb(243, 243, 243);
+  background-image: url(/static/Image/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 100vh; */
+  /* background-attachment: fixed; */
+  width: 100%;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--hover-color);
+}
+.header {
+  background-color: rgb(125, 235, 235);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-links a {
+  font-size: 1.2rem;
+  margin-right: 20px;
+  font-weight: 600;
+}
+.login-box a {
+  font-size: 1.2rem;
+  margin-right: 8px;
+  font-weight: 600;
+}
+.main-contents {
+  border: 2px solid black;
+  height: 92vh;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+}
+.footer {
+  background-color: rgb(240, 74, 255);
+  height: 92vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.topics {
+  display: flex;
+  flex-direction: column;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+.gmail {
+  display: flex;
+  flex-direction: column;
+}

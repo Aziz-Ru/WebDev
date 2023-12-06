@@ -1,12 +1,17 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+import datetime
 def home(req):
-    data={
-        'Name':'MY DP',
-        'title':'Home',
-        'author':'Aziz'
-    }
-    return render(req,"index.html",data)
+    date=datetime.datetime.now()
+    # data={
+    #     'date':date,
+    #     'Name':'MY DP',
+    #     'title':'Home',
+    #     'cName':['c++','java','js','python'],
+    #     'author':'Aziz'
+    # }
+    # return render(req,"index.html",data)
+    return render(req,"index.html")
 def about(req):
     return HttpResponse("Hello World")
 
