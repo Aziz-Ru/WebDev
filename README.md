@@ -1,14 +1,15 @@
-Tailwind insatalltion in project:
+# Tailwind insatalltion in project:
 
-npm init -y
+Install npm by this `npm init -y`
 
-npm install -D tailwindcss
-npx tailwindcss init
-after in content "\*"
+Install tailwind `npm install -D tailwindcss`
 
-mkdir src
-touch src/input.css
-//add in input css//
+and initialize tailwind `npx tailwindcss init` that create .config file in content "\*"
+
+#### make directory src and create two file input.css & output.css 
+
+add these line code in input.css
+``` bash
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
@@ -16,9 +17,12 @@ touch src/input.css
 @import "tailwindcss/utilities";
 
 in package.json file script
+```
+#### In package.json file script section write this to run the tailwind 
 
-"build": "tailwindcss -i ./src/input.css -o ./output/output.css --watch"
-npx tailwindcss -i ./src/input.css -o ./output/output.css --watch
+`"build": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"`
 
-html file link with ./output/output.css
+Now Run in terminal `npm run build`
+
+## In HTML file link with ./src/output.css
 ///****\*\*\*\*****/
